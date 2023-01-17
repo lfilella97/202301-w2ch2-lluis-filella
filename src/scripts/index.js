@@ -1,12 +1,10 @@
 import { strictEquals } from "./comparators/strictEquals.js";
 
-console.log(
-  strictEquals(1, 1),
-  strictEquals(NaN, NaN),
-  strictEquals(0, -0),
-  strictEquals(-0, 0),
-  strictEquals(1, "1"),
-  strictEquals(true, false),
-  strictEquals(false, false),
-  strictEquals("Water", "oil")
-);
+console.log(`1 === 1 -> ${strictEquals(1, 1)}`);
+console.log(`NaN === NaN -> ${strictEquals(NaN, NaN)}`);
+console.log(`0 === -0 -> ${strictEquals(0, -0)}`);
+console.log(`-0 === 0 -> ${strictEquals(-0, 0)}`);
+console.log(`1 === "1" -> ${strictEquals(1, "1")}`);
+console.log(`true === false -> ${strictEquals(true, false)}`);
+console.log(`false === false -> ${strictEquals(false, false)}`);
+console.log(`"water" === "oil" -> ${strictEquals("Water", "oil")}`);
